@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css" </head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+
+        <form>
+            <div class="form-control">
+                <label for="login">Login: </label>
+                <input type="text" id="login" placeholder="Digite seu login" />
+            </div>
+
+            <div class="form-control">
+                <label for="Email">Email: </label>
+                <input type="email" id="Email" placeholder="Digite seu Email" />
+            </div>
+
+            <div class="form-control">
+                <label for="Senha">Senha: </label>
+                <input type="password" id="Senha" placeholder="Digite seu Senha" />
+            </div>
+
+            <div class="form-control">
+                <div class="opcoes">
+                    <input type="checkbox" id="lembrar" />
+                    <label for="lembrar">Lembrar meu login</label>
+                </div>
+                <div class="form-control">
+                    <label>Tipo de acesso:</label>
+
+                    <div class="opcoes">
+                        <input type="raido" id="aluno" name="tipo" value="aluno" />
+                        <label for="aluno">Aluno</label>
+
+                        <input type="raido" id=professor" name="tipo" value="professor" />
+                        <label for="professor">professor</label>
+                    </div>
+                
+                    <div class="form-control">
+                        <label for="cidade">Cidade:  </label>
+
+                        <select id="cidade">
+                            <option value="">Selecione sua Cidade</option>
+                            <option value="Jundiai">Jundiai</option>
+                            <option value="sao-paulo">São Paulo</option>
+                            <option value="cotia">Cotia</option>
+                        </select>
+
+                        <div class="form-control">
+                            <button type="submit">Entrar</button>
+                        </div>
+                    </div>
+        </form>
+    </div>
+
+<a href="esqueceu.html  ">Esqueceu a senha</a>
+</body>
+
+</html>
