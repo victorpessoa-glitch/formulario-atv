@@ -1,56 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro de Aluno</title>
     <link rel="stylesheet" href="./css/formulario.css">
 </head>
-
 <body>
-    <div class="container">
+
+    <div class="card">
         <h1>Cadastro de aluno</h1>
 
-        <form>
-            <div class="form-control">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" />
+        <form action="login.html" method="GET">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
             </div>
 
-            <div class="form-control">
-                <label for="email">Email</label>
-                <input type="email" id="email" />
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email">
             </div>
 
-            <div class="form-comtrol">
-                <label for="senha">Senha</label>
-                <input type="password" id="senha" />
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
             </div>
 
-            <div class="form-control">
-                <label for="data">Data de nascimento</label>
-                <input type="date" id="data" />
+            <div class="form-group">
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" id="nascimento" name="nascimento">
+            </div>
+
+            <div class="form-group">
+                <label for="curso">Curso:</label>
+                <select id="curso" name="curso">
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="informatica">Informática</option>
+                    <option value="administracao">Administração</option>
+                    <option value="enfermagem">Enfermagem</option>
+                </select>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn-submit">Cadastrar</button>
+                <button type="reset" class="btn-clear">Limpar</button>
             </div>
         </form>
+
+        <div class="back-link">
+            <a href="login.html">Ir para página de Login</a>
+        </div>
     </div>
 
-    <div class="form-control">
-        <label for="curso">Curso</label>
-        <select id="curso">
-            <option value="">Selecione</option>
-            <option value="infomatica">Informatica</option>
-            <option value="programacao">Programação</option>
-        </select>
-    </div>
-    
-    <div class="form-control">
-        <button type="submit"class="btn-cadastro">Cadastrar</button>
-        <button type="reset" class="btn-limpar">Limpar</button>
-    </div>
-</form>
-<br>
-<a href="login.html">Ir para página de Login</a>
 </body>
-
 </html>
